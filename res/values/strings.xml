@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">ReserVeZaVlasnike</string>
+    <string name="title_activity_second">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string-array name="country_array">
+        <item>Svi</item>
+        <item>Jasna</item>
+        <item>Marija</item>
+
+    </string-array>
+    <string-array name="Rezano">
+        <item>Neprihvaćene</item>
+        <item>Prihvaćene</item>
+        <item>Moje</item>
+    </string-array>
+    <string-array name="Rezervacije">
+        <item>Zadnjih 7 dana</item>
+        <item>Zadnjih 7 tjedana</item>
+        <item>Zadnjih 7 mjeseci</item>
+
+    </string-array>
+    <string-array name="Grafovi">
+        <item>Osoblje</item>
+        <item>Posao</item>
+
+    </string-array>
+    <string-array name="Dane">
+        <item>Plaćeno</item>
+        <item>Neplaćeno</item>
+        <item>Svi računi</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_notification_channel_id">123</string>
+</resources>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cijelirelaitiv"
+
+    android:layout_margin="7dp"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="@drawable/customborderzaraspored"
+        android:padding="10dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/relativica"
+        android:layout_margin="7dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:id="@+id/bezvezninaslov"
+            android:layout_centerHorizontal="false"
+            android:textSize="24sp"
+            android:text="Roga123"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/star"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/bezvezninaslov"
+            android:src="@drawable/ic_baseline_star_rate_24"
+            android:layout_marginTop="3dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/star"
+            android:id="@+id/bezveznaocjena"
+            android:layout_centerHorizontal="false"
+            android:textSize="24sp"
+            android:text="(8.1)"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/beuzveni"
+            android:src="@drawable/ic_baseline_date_range_24"
+            android:layout_toRightOf="@+id/bezveznaocjena"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/beuzveni"
+            android:id="@+id/bezveznovrijeme"
+            android:layout_centerHorizontal="false"
+            android:textSize="24sp"
+            android:text="17:00-20:00"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/bezveznovrijeme"
+            android:background="@color/white"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ustaskipodatci"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/bezvezninaslov"
+            android:layout_height="wrap_content">
+<ImageView
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:id="@+id/listaukrasna"
+    android:src="@drawable/ic_baseline_list_24"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/listaukrasna"
+                android:text="Šišanje, pranje, feniranje"
+                android:id="@+id/ustaskiDatum"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:id="@+id/crta"
+    android:layout_below="@id/ustaskiDatum"
+    android:background="@color/white"/>
+      <ImageView
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_marginTop="5dp"
+          android:id="@+id/ulrasnisms"
+          android:layout_below="@+id/crta"
+          android:src="@drawable/ic_baseline_textsms_24"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/ulrasnisms"
+                android:layout_below="@+id/ustaskiDatum"
+                android:text="Oprostite može li molim vas ako nije problem, naravno ako vam je teško nema veze, uglavnom, bio bih vam zahvalan ako mogu kasnit tri minute"
+                android:id="@+id/ustaskiDatum2"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/ustaskiDatum2"
+                android:background="@color/white"/>
+        </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_below="@id/ustaskipodatci"
+    android:id="@+id/llbutoni"
+    android:orientation="horizontal">
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="45dp"
+           android:layout_marginRight="4dp"
+           android:layout_weight="1"
+           android:backgroundTint="@color/red"
+           android:textColor="@color/white"
+           android:text="Odbij"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="4dp"
+        android:layout_weight="1"
+        android:backgroundTint="#00e676"
+        android:textColor="@color/black"
+        android:text="Potvrdi"/>
+
+</LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:visibility="gone"
+            android:layout_below="@+id/ustaskipodatci"
+            android:layout_weight="1"
+            android:backgroundTint="#00e676"
+            android:id="@+id/ponudidrugitermin"
+            android:textColor="@color/black"
+            android:text="Ponudi drugi termin"/>
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:background="@drawable/circle"
+        android:id="@+id/pickasamiotkazatcu"
+        android:layout_below="@+id/relativica"
+        android:layout_marginTop="-30dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

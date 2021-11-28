@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:text="Reserve"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+                android:textColor="@color/black"
+                android:textIsSelectable="true"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/unosIme"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:layout_marginTop="20dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="username"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/unosPassword"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:autofillHints="" />
+
+            <Button
+                android:id="@+id/button"
+
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="#131313"
+                android:hapticFeedbackEnabled="false"
+                android:rotationX="0"
+                android:text="Login"
+                android:visibility="visible" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

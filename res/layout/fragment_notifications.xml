@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:id="@+id/userid"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:id="@+id/poruka"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:id="@+id/naslov"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:id="@+id/button"/>
+
+    <Spinner
+        android:layout_width="150dp"
+        android:id="@+id/spiner123"
+        android:elevation="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:layout_height="30dp"
+        android:popupBackground="@color/yellow"
+        android:scrollbars="none"
+        android:spinnerMode="dropdown"
+        android:layout_alignParentRight="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/spiner123"
+        android:layout_width="match_parent"
+        android:id="@+id/posljedniresajkler"
+        android:layout_height="match_parent"/>
+
+
+</RelativeLayout>

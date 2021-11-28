@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:elevation="10dp"
+    android:visibility="invisible"
+    android:id="@+id/sjebosisustav"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".BlankFragment">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="12/01/2021"
+        android:id="@+id/nadnevakFragment"
+        android:layout_marginTop="4dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <!-- TODO: Update blank fragment layout -->
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_below="@id/nadnevakFragment"
+       android:layout_height="match_parent"
+       android:id="@+id/reciklirajBrate"/>
+
+</RelativeLayout>

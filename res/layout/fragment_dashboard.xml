@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/relativKompletni"
+    android:elevation="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+<CalendarView
+    android:layout_width="wrap_content"
+android:background="@color/white"
+    android:elevation="5dp"
+    android:visibility="visible"
+    android:layout_below="@+id/nadnevak"
+    android:layout_height="wrap_content"
+
+    android:id="@+id/kalendar"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="50dp"
+        android:layout_below="@+id/nadnevak"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:id="@+id/relativnidodatak"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="0dp"
+       >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginRight="40dp"
+            android:drawableRight="@drawable/ic_baseline_assignment_ind_24"
+            android:layout_height="wrap_content"
+            android:hint="Korisnik (neobavezno)"
+            android:id="@+id/imesign"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginRight="40dp"
+            android:drawableRight="@drawable/servuce"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imesign"
+            android:hint="Usluge (neobavezno)"
+            android:id="@+id/uslugesign"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:id="@+id/pocetak"
+            android:text="Početak"
+            android:layout_toRightOf="@id/satcina"
+            android:textColor="@color/black"
+            android:layout_below="@+id/uslugesign"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="7dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:id="@+id/satcina"
+            android:src="@drawable/ic_outline_alarm_24"
+            android:layout_below="@+id/uslugesign"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/trajanjcine"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@id/traanje"
+            android:src="@drawable/ic_baseline_timelapse_24"
+            android:layout_below="@+id/uslugesign"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:id="@+id/traanje"
+            android:text="Trajanje"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/black"
+            android:layout_below="@+id/uslugesign"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            />
+
+    <com.google.android.material.slider.Slider
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:clickable="true"
+        android:valueFrom="0"
+        android:valueTo="180"
+        android:id="@+id/slider"
+        app:tickColorActive="@color/black"
+        android:stepSize="10"
+        app:labelStyle="@color/white"
+        android:layout_below="@+id/trajanjcine"
+        android:layout_marginTop="90dp"
+        android:tag="@string/common_google_play_services_enable_button"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@id/buttoncina"
+        android:elevation="59dp"
+        android:layout_toRightOf="@+id/ponistavajuciButton"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="visible"
+        android:elevation="51dp"
+        android:background="@drawable/ic_baseline_check_24"
+        android:layout_below="@id/trajanjcine"
+android:layout_marginTop="90dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/buttoncina"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_baseline_cancel_24"
+          android:layout_alignParentStart="true"
+            android:elevation="51dp"
+            android:layout_below="@id/trajanjcine"
+            android:layout_marginTop="90dp"
+            android:id="@+id/ponistavajuciButton"/>
+
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/stanjeNaslideru"
+            android:layout_below="@+id/traanje"
+            android:textColor="@color/black"
+            android:text="0"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/trajanjcine"
+            android:textAlignment="center"
+/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/plavuskasta"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/pocetak"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:text="20"
+            android:textColor="@color/black"
+            android:id="@+id/edTxtSlider"
+            android:layout_toLeftOf="@+id/dvotocka"
+            android:layout_above="@+id/slider"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:id="@+id/dvotocka"
+            android:textStyle="bold"
+            android:text=":"
+            android:layout_toLeftOf="@+id/edTxtSlider2"
+            android:layout_above="@+id/slider"
+            android:textAlignment="center"
+            />
+
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+android:textColor="@color/black"
+            android:textAlignment="center"
+            android:text="10"
+            android:id="@+id/edTxtSlider2"
+            />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:textSize="17sp"
+        android:elevation="3dp"
+        android:textColor="@color/black"
+        android:id="@+id/nadnevak"
+        android:text="12.02.2012."
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toLeftOf="@+id/spiner"
+        android:layout_alignParentStart="true"
+       android:textAlignment="center"/>
+
+    <Spinner
+        android:layout_width="150dp"
+        android:id="@+id/spiner"
+        android:elevation="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:layout_height="30dp"
+        android:popupBackground="@color/yellow"
+        android:scrollbars="none"
+        android:spinnerMode="dropdown"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/text_dashboard"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:background="@color/white"
+        android:id="@+id/resajkler"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/relativnidodatak"/>
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginRight="40dp"
+    android:text="+"
+    android:id="@+id/crnoDugme"
+    android:textSize="20sp"
+    android:elevation="10dp"
+    android:visibility="gone"
+    android:layout_marginBottom="50dp"
+    android:src="@drawable/ic_baseline_add_circle_outline_24"
+    android:scaleType="fitXY"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/relativniFragment"
+        android:layout_alignParentBottom="true">
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:name="com.example.reservezavlasnike.BlankFragment2"
+        android:id="@+id/fragment2"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="40dp"
+            android:text="+"
+            android:visibility="invisible"
+            android:id="@+id/fejkGumb"
+            android:textSize="20sp"
+            android:elevation="10dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/ic_baseline_add_circle_outline_24"
+            android:scaleType="fitXY"/>
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/resajkler"
+        android:background="@color/yellow"/>
+
+</RelativeLayout>
