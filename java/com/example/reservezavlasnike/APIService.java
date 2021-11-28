@@ -17,7 +17,7 @@ public interface APIService {
 
             {
                     "Content-Type:application/json",
-                    "Authorization:key=AAAAuSQ1-BI:APA91bHeR468I6EA0HkicscKMLo4ywrgsaaJicCotJ5D67j8nGL83XOahhGqiW2LVxO3Vdccckc7nk8wVE5i8Ka9tMzFCDxP5OP63dUzJ_jmwpfw1PMi-BhFbQdPEd_LOIZ-JuBB4HWy"
+                    "Authorization:key=AAAAuSQ1-BI:-BhFbQdPEd_LOIZ-JuBB4HWy"
 
 
 
